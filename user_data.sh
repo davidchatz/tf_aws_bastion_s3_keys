@@ -1,21 +1,8 @@
 #!/usr/bin/env bash
 
-##############
-# Install deps
-##############
-# Ubuntu
-apt-get update
-apt-get install python-pip jq -y
-#####################
-
+# Using Amazon Linux so we can assume tools are already installed
 # Amazon Linux (RHEL) - NAT instances
 yum update -y
-# epel provides python-pip & jq
-yum install -y epel-release
-yum install python-pip jq -y
-#####################
-
-pip install --upgrade awscli
 
 ##############
 
